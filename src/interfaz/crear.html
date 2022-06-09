@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  
+
+<head>
+  <title> OpenSea</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body>
+    <div class="mdc-top-app-bar__row">
+        <header class="mdc-top-app-bar">
+          <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+            <span class="mdc-top-app-bar__title">OpenSea</span>
+          </section>
+        </header> 
+    </div>
+    <!--Ingresar nombre-->
+    <div>
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input" type="text" placeholder="Nombre" aria-label="Label">
+            <span class="mdc-line-ripple"></span>
+        </label>
+    </div>
+    <!--Ingresar Descripcion-->
+    <div>
+        <label class="mdc-text-field mdc-text-field--outlined mdc-text-field--textarea mdc-text-field--with-internal-counter">
+            <span class="mdc-notched-outline">
+              <span class="mdc-notched-outline__leading"></span>
+              <span class="mdc-notched-outline__notch">
+                <span class="mdc-floating-label" id="my-label-id"></span>
+              </span>
+              <span class="mdc-notched-outline__trailing"></span>
+            </span>
+            <span class="mdc-text-field__resizer">
+              <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40" maxlength="140"></textarea>
+              <span class="mdc-text-field-character-counter">0 / 140</span>
+            </span>
+          </label>
+    </div>
+    <!--Ingresar Categoria-->
+    <div>
+        <div class="mdc-form-field">
+            <div class="mdc-radio">
+              <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
+              <div class="mdc-radio__ripple"></div>
+            </div>
+            <label for="radio-1">Deporte</label>
+            <div class="mdc-radio">
+                <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+                <div class="mdc-radio__ripple"></div>
+              </div>
+              <label for="radio-2">Musica </label>
+        </div>
+    </div>
+    <!--Ingresar Precio-->
+    <div>
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input" type="number" placeholder="Precio" aria-label="Label">
+            <span class="mdc-line-ripple"></span>
+        </label>
+    </div>
+    <!--Ingresar Fecha-->
+    <div>
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input" type="date" placeholder="Fecha expiracion" aria-label="Label">
+            <span class="mdc-line-ripple"></span>
+        </label>
+    </div>
+    <!--Ingresar Archivo-->
+    <div>
+        <label class="mdc-text-field mdc-text-field--filled mdc-text-field--no-label">
+            <span class="mdc-text-field__ripple"></span>
+            <input class="mdc-text-field__input" type="text" placeholder="Archivo" aria-label="Label">
+            <span class="mdc-line-ripple"></span>
+        </label>
+    </div>
+    <!--Botones volver y confirmar-->
+    <div>
+        <button class="mdc-button mdc-button--raised">
+            <a href="index.html">
+            <span class="mdc-button__label">Volver</span>
+            </a>
+        </button>
+        <button class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Confirmar</span>
+        </button>
+    </div>
+
+</body>
+
+
+</html>
