@@ -27,7 +27,7 @@
 @include card.core-styles;
 @include textfield.core-styles;
 
-html {
+html { 
   scroll-behavior: smooth;
 }
 
@@ -60,7 +60,8 @@ section {
 }
 
 .mdc-tab {
-    background-color: #67daff;
+    background-color: #f2f2f2;
+    /*#67daff*/
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -77,4 +78,14 @@ section {
 
 .mdc-snackbar__actions .mdc-button__label {
   color: #67daff;
+}
+
+body{
+background-color: #f2f2f2;
+;
+}
+
+.mdc-top-app-bar__title{
+ color: rgb(111, 86, 86);
+ width: 96%;
 }
