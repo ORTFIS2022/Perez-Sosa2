@@ -1,19 +1,20 @@
-const Limite = 1;
+const Limit = 1;
 
 export default class Nft {
-    constructor(nombre, categoria, precio, plazo, archivo){
-        this.nombre = nombre;
-        this.categoria = categoria;
-        this.setPrecio(precio);
-        this.plazo = plazo;
-        this.archivo = archivo;
+    constructor(name, description, category, price, date, file){
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.setPrice(price);
+        this.date = date;
+        this.file = file;
     }
 
-    setPrecio(precio){
-        if (precio <= limite){
-            this.precio = precio;
+    setPrice(price){
+        if (price <= Limit){
+            this.price = price;
         }else{
-            throw new Error(`El precio excede el limite`);
+            throw new Error(`The price exceeds the limit`);
         }
     }
 }

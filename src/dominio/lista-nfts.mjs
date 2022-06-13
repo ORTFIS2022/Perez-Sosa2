@@ -1,15 +1,15 @@
-export default class ListaNfts {
+export default class ListNfts {
 
     constructor() {
       this.nfts = [];
     }
   
-    agregar(nft) {
-      let nftExiste = this.nfts.some(m => m.nombre == nft.nombre);
-      if (!nftExiste) {
+    add(nft) {
+      let nftExists = this.nfts.some(m => m.name == nft.name);
+      if (!nftExists) {
         this.nfts.push(nft);
       } else {
-        throw new Error(`No se pudo agregar. ${nft.titulo} ya existe.`);
+        throw new Error(`Could not add, ${nft.titulo} already exists.`);
       }
     }
   
