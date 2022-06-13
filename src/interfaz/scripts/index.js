@@ -4,7 +4,8 @@ import { MDCTabBar } from '@material/tab-bar';
 import { MDCTextField } from '@material/textfield';
 import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
-import ListaNfts from '../../dominio/lista-nfts.mjs';
+import ListNfts from '../../dominio/lista-nfts.mjs';
+import Nft from '../../dominio/nft.mjs';
 
 const listNfts = new ListNfts();
 

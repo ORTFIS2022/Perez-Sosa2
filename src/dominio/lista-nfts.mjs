@@ -9,7 +9,7 @@ export default class ListNfts {
       if (!nftExists) {
         this.nfts.push(nft);
       } else {
-        throw new Error(`Could not add, ${nft.titulo} already exists.`);
+        throw new Error(`Could not add, ${nft.name} already exists.`);
       }
     }
   
