@@ -6,7 +6,7 @@ import { MDCSelect } from '@material/select';
 import {MDCSnackbar} from '@material/snackbar';
 import ListNfts from '../../dominio/lista-nfts.mjs';
 import Nft from '../../dominio/nft.mjs';
-import { url } from 'inspector';
+
 
 const listNfts = new ListNfts();
 
@@ -33,8 +33,7 @@ const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
 
 const addButton = new MDCRipple(document.getElementById('addButton'));
-
-addButton.listen('click', () => {
+ addButton.listen('click', () => {
    let name = textFieldName.value;
    let description = textFieldDescription.value;
    let category = selectCategory.value;
@@ -44,6 +43,7 @@ addButton.listen('click', () => {
    try {
      let newNft = new Nft(name, description, category, price, date, file);
      listNfts.add(newNft);
+
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
      snackbar.labelText = error.message;
@@ -52,20 +52,17 @@ addButton.listen('click', () => {
      let nfts = listNfts.getNfts();
      console.log(nfts);
    }
-/*
+
+
    var image_list = document.getElementById("image-list");
-   var h1 = document.createElement("card");
-   h1.innerHTML = createCard(name, description, category, price, date, file);
-   image_list.appendChild(h1);
-*/
-/*
-var image_list = document.getElementById("image-list");
   var el = document.createElement("div");
   el.className ="card";
   el.id = "name";
-  //el.style.backgroundImage = "url('file')";
+  el.style.backgroundImage = "url(file)";
   el.innerHTML = name;
   
   image_list.append(el);
-*/
-})
+  }
+)
+
+
