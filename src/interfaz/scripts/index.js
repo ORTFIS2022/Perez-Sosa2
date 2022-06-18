@@ -24,6 +24,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
+
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
@@ -67,3 +68,5 @@ form.addEventListener('submit', (e) =>{
   console.log(e)
 })
 */
+
+
