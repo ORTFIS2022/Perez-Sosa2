@@ -23,6 +23,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
+
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
@@ -50,12 +51,3 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
      console.log(nfts);
    }
 })
-/*
-const form= document.getElementById('formNft')
-console.log
-form.addEventListener('submit', (e) =>{
-  debugger
-  e.preventDefault()
-  console.log(e)
-})
-*/
