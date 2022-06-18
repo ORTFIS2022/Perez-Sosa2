@@ -7,6 +7,7 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListNfts from '../../dominio/lista-nfts.mjs';
 import Nft from '../../dominio/nft.mjs';
 
+
 const listNfts = new ListNfts();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
@@ -41,6 +42,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    try {
      let newNft = new Nft(name, description, category, price, date, file);
      listNfts.add(newNft);
+
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
      snackbar.labelText = error.message;
@@ -49,7 +51,13 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
      let nfts = listNfts.getNfts();
      console.log(nfts);
    }
-})
+  }
+)
+
+
+
+
+
 /*
 const form= document.getElementById('formNft')
 console.log
