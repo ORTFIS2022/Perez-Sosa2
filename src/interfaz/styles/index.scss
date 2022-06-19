@@ -63,10 +63,10 @@ section {
 
 .mdc-tab {
     background-color: #f2f2f2;
-    /*#67daff*/
+    //#67daff
 }
 
-.mdc-tab__content .mdc-tab__text-label {
+.mdc-tab_content .mdc-tab_text-label {
     color: black;
 }
 
@@ -78,7 +78,7 @@ section {
   margin-top: 1rem;
 }
 
-.mdc-snackbar__actions .mdc-button__label {
+.mdc-snackbar_actions .mdc-button_label {
   color: #67daff;
 }
 
@@ -92,14 +92,14 @@ background-color: #f2f2f2;
  width: 96%;
 }
 
-.mdc-card {
+.card {
   height: 300px;
   width: 300px;
   padding: 16px;
-  /*Direccion de la imagen*/
-  background-image: url("https://www.criptonoticias.com/wp-content/uploads/2022/01/nft-BAYC-vendido-usd-34-millones.jpg");
+  //Direccion de la imagen/
+  //background-image: url("https://www.criptonoticias.com/wp-content/uploads/2022/01/nft-BAYC-vendido-usd-34-millones.jpg");
   background-position:center;
-  background-size: 200px 200px;
+  background-size: 200px;
   background-repeat: no-repeat;
 }
 
