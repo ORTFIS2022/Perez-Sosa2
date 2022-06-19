@@ -58,7 +58,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
   var el = document.createElement("div");
   el.className ="card";
   el.id = "name";
-  el.style.backgroundImage = "url(file)";
+  el.style.backgroundImage = "url('"+file+"')";
   el.innerHTML = name;
   
   image_list.append(el);

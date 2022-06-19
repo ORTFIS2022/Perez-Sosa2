@@ -1,7 +1,7 @@
 export default class ListNfts {
 
     constructor() {
-      this.nfts = ['HOla'];
+      this.nfts = [];
     }
   
     add(nft) {
