@@ -52,11 +52,23 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
      let nfts = listNfts.getNfts();
      console.log(nfts);
    }
+   var image_list = document.getElementById("image-list");
+   var el = document.createElement("div");
+   el.className ="card";
+   el.id = "name";
+   //var link = new URL(file);
+   el.style.backgroundImage = encodeURI(file);
+   el.innerHTML = name;
+   
+   image_list.append(el);
   }
 )
 
+/*
+for( var contador = 0 ; contador < listNfts.length ; contador ++  ){
 
-
+}
+*/
 
 
 /*
