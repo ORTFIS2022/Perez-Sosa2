@@ -28,6 +28,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
+const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select2'));
 const textFieldPrice = new MDCTextField(document.getElementById('price'));
 const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
@@ -53,33 +54,27 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
      console.log(nfts);
    }
 
-
-   var image_list = document.getElementById("image-list");
-  var el = document.createElement("div");
-  el.className ="card";
-  el.id = "name";
-  el.style.backgroundImage = "url('"+file+"')";
-  el.innerHTML = name;
   
-  image_list.append(el);
+  
   }
 )
 
-/*
-for( var contador = 0 ; contador < listNfts.length ; contador ++  ){
-
-}
-*/
-
-
-/*
-const form= document.getElementById('formNft')
-console.log
-form.addEventListener('submit', (e) =>{
-  debugger
-  e.preventDefault()
-  console.log(e)
-})
-*/
-
-
+const searchButton = new MDCRipple(document.getElementById('searchButton'));
+ searchButton.listen('click', () => {
+   let categorySelected = selectCategory2.value;
+  //hago un for que recorra la lista de nfts. Si la categoria es igual a categroySelected, 
+  //lo agrego con el codigo de mas abajo
+  for(var i=0; i<listNfts.length; i++){
+    if(listNfts[i].getCategory() == categorySelected){
+      var image_list = document.getElementById("image-list");
+      var el = document.createElement("p1");
+      el.className ="card";
+      el.id = "name";
+      el.style.backgroundImage = "url('"+file+"')";
+      el.innerHTML = textFieldName.value; 
+      image_list.append(el);
+    }
+  }
+  
+  }
+)
