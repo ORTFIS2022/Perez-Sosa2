@@ -17,4 +17,8 @@ export default class Nft {
             throw new Error(`The price exceeds the limit`);
         }
     }
+
+    getCategroy(){
+        return this.category;
+    }
 }

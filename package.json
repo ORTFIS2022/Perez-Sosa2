@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@material/button": "^14.0.0",
-    "@material/dialog": "^14.0.0"
+    "@material/dialog": "^14.0.0",
+    "@material/select": "^14.0.0"
   }
 }
