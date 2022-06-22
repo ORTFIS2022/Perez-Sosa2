@@ -53,9 +53,9 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
        el.className ="card";
        el.id = "name";
        el.style.backgroundImage = "url('"+file+"')";
-       el.innerHTML = name + " | ETH: " + price;
+       el.innerHTML = name + "\n ETH: " + price;
+       
        image_list.append(el);
-
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
      snackbar.labelText = error.message;
@@ -64,21 +64,19 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
      let nfts = listNfts.getNfts();
      console.log(nfts);
    }
-
-
-
   }
 )
 
 searchMusic.listen('click', () => {
   try{
+       //let categorySelected = selectCategory2.value;
        for(var i=0; i<listNfts.length; i++){
         if(listNfts[i].getCategory() == "Music"){
           var image_list = document.getElementById("image-list");
           var el = document.createElement("p1");
           el.className ="card";
-          el.innerText = i.getName() + " " + " | U$S " + i.getPrice();
-          el.style.backgroundImage = "url('"+i.getFile()+"')";
+          el.innerText = i.getName() + " " + " | U$S " + i.getFile();
+          el.style.backgroundImage = "url('"+file+"')";
           image_list.append(el);
           snackbar.labelText = error.message;
           snackbar.open();
@@ -90,6 +88,8 @@ searchMusic.listen('click', () => {
     snackbar.open();
 
   }
-  }
-)
 
+  
+  }
+
+)
