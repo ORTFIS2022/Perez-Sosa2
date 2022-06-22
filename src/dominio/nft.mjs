@@ -10,7 +10,7 @@ export default class Nft {
         this.setDate(date);
         this.setFile(file);
     }
-    
+
     setName(name){
         if(name == null || name.length == 0 ){
             throw new Error(`Insert a name for your Nft`);
@@ -20,7 +20,7 @@ export default class Nft {
     }
 
     setCategory(category){
-        if(category != null){
+        if(category != null && category.length != 0){
             this.category = category;
         }else{
             throw new Error(`Choose a category`);
@@ -44,10 +44,15 @@ export default class Nft {
     }
 
     setPrice(price){
-        if (price <= Limit){
+        if (price != null && price.length > 0 && price <= Limit){
             this.price = price;
         }else{
-            throw new Error(`The price exceeds the limit`);
+            if(price == null || price.length == 0){
+                throw new Error(`Insert a price`);
+            }else{
+                throw new Error(`The price exceeds the limit`);
+            }
+            
         }
     }
 
