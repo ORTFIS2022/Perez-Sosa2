@@ -23,11 +23,13 @@
 @use "@material/menu/mdc-menu";
 @use "@material/select/styles";
 @use "@material/snackbar/mdc-snackbar";
+@use "@material/image-list/mdc-image-list";
+@use "@material/image-list";
 
 @include card.core-styles;
 @include textfield.core-styles;
 
-html {
+html { 
   scroll-behavior: smooth;
 }
 
@@ -38,6 +40,7 @@ body {
 
 .app-bar {
   position: absolute;
+  background-color: #026977;
 }
 
 .mdc-top-app-bar {
@@ -50,9 +53,10 @@ section {
 }
 
 .content {
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding-bottom: 20rem;
-  text-align: center;
+  text-align:center;
+  align-items: normal;
 }
 
 .sample-content--hidden {
@@ -60,7 +64,7 @@ section {
 }
 
 .mdc-tab {
-    background-color: #67daff;
+    background-color: #aeedf5;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -68,13 +72,103 @@ section {
 }
 
 .mdc-text-field {
-    margin: 1rem auto;
+  width: 50%;
+  margin: 1rem auto;
+
 }
 
+.mdc-select{
+  width: 50%;
+}
+
+
 .button {
-  margin-top: 1rem;
+  margin-top: 1rem auto;
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+  color: #0095a8;
+}
+
+body{
+background-color: #f2f2f2;
+;
+}
+
+.mdc-top-app-bar__title{
+ color: rgb(18, 16, 16);
+ width: 96%;
+}
+
+.card {
+  height: 296px;
+  width: 296px;
+  padding: 16px;
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+}
+
+.mdc-card {
+  height: 350px;
+  width: 350px;
+  padding: 16px;
+  background-image: url("https://img.seadn.io/files/8a9de5c3e69c0bdf4dd183e0ea8a3581.png?auto=format&fit=max&w=640");
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+}
+
+.mdc-card-prueba{
+  height: 296px;
+  width: 296px;
+  padding: 16px;
+  background-image: url("https://img.seadn.io/files/07e5cfcfeabc324b17b35a1a89f5d32a.png?auto=format&fit=max&w=640");
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+
+}
+
+.mdc-card-prueba2{
+  height: 296px;
+  width: 296px;
+  padding: 16px;
+  background-image: url("https://img.seadn.io/files/746f0900f44e7011c968d47742218835.png?auto=format&fit=max&w=640");
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+
+}
+
+.mdc-card__action-icons{
+  text-align: center;
+}
+
+.my-image-list {
+  @include image-list.standard-columns(5);
 }
