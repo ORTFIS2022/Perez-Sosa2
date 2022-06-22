@@ -1,6 +1,7 @@
 const Limit = 1;
 
 export default class Nft {
+    
     constructor(name, description, category, price, date, file){
         this.name = name;
         this.description = description;
@@ -18,7 +19,19 @@ export default class Nft {
         }
     }
 
-    getCategroy(){
+    getName(){
+        return this.name;
+    }
+
+    getPrice(){
+        return this.price
+    }
+
+    getFile(){
+        return this.file
+    }
+
+    getCategory(){
         return this.category;
     }
 }
