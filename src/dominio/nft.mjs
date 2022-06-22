@@ -3,12 +3,36 @@ const Today = new Date("2022-06-23");
 
 export default class Nft {
     constructor(name, description, category, price, date, file){
-        this.name = name;
-        this.description = description;
-        this.category = category;
+        this.setName(name);
+        this.setDescription(description);
+        this.setCategory(category);
         this.setPrice(price);
         this.setDate(date);
-        this.file = file;
+        this.setFile(file);
+    }
+    
+    setName(name){
+        if(name == null || name.length == 0 ){
+            throw new Error(`Insert a name for your Nft`);
+        }else{
+            this.name = name;
+        }
+    }
+
+    setCategory(category){
+        if(category != null){
+            this.category = category;
+        }else{
+            throw new Error(`Choose a category`);
+        }
+    }
+
+    setDescription(description){
+        if(description == null || description.length == 0 ){
+            throw new Error(`Write your description`);
+        }else{
+            this.description = description;
+        }
     }
 
     setDate (date){
@@ -24,6 +48,14 @@ export default class Nft {
             this.price = price;
         }else{
             throw new Error(`The price exceeds the limit`);
+        }
+    }
+
+    setFile(file){
+        if(file == null || file.length == 0 ){
+            throw new Error(`Insert a file`);
+        }else{
+            this.file = file;
         }
     }
 

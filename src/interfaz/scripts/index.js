@@ -42,9 +42,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    let date = new Date(textFieldDate.value);
    let file = textFieldFile.value;
    try {
-     
-     if(name != null && description != null && category != null && price != null && date != null && file != null){
-      let newNft = new Nft(name, description, category, price, date, file);
+       let newNft = new Nft(name, description, category, price, date, file);
       listNfts.add(newNft);
       var image_list = document.getElementById("image-list");
        var el = document.createElement("p1");
@@ -53,7 +51,6 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
        el.style.backgroundImage = "url('"+file+"')";
        el.innerHTML = name;
        image_list.append(el);
-     }
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
      snackbar.labelText = error.message;
