@@ -90,8 +90,6 @@ searchMusic.listen('click', () => {
     snackbar.open();
 
   }
-
-  
   }
 )
 
