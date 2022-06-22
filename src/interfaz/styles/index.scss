@@ -96,34 +96,34 @@ background-color: #f2f2f2;
 }
 
 .card {
-  height: 350px;
-  width: 350px;
-  height: 300px;
-  width: 300px;
+  height: 296px;
+  width: 296px;
   padding: 16px;
   background-position:center;
-  background-size: 350px;
-  background-size: 200px 200px;
+  background-size: 250px 250px;
   background-repeat: no-repeat;
-  background-color: #67daff;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
   box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  border: 10px solid white;
 }
 
 .mdc-card {
   height: 350px;
   width: 350px;
-  height: 300px;
-  width: 300px;
   padding: 16px;
   background-image: url("https://media.americateve.com/p/67a28c1514b9a520e82c3fab6030a4eb/adjuntos/179/imagenes/008/234/0008234807/1200x1200/smart/bayc2jpg.jpg");
   background-position:center;
-  background-size: 200px 200px;
+  background-size: 250px 250px;
   background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
   box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  border: 10px solid white;
 }
 
 .mdc-card__action-icons{
