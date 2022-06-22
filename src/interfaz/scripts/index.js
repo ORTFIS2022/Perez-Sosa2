@@ -28,7 +28,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
-const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select2'));
+//const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select2'));
 const textFieldPrice = new MDCTextField(document.getElementById('price'));
 const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
@@ -42,9 +42,18 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    let date = textFieldDate.value;
    let file = textFieldFile.value;
    try {
-     let newNft = new Nft(name, description, category, price, date, file);
-     listNfts.add(newNft);
-
+     
+     if(name != null && description != null && category != null && price != null && date != null && file != null){
+      let newNft = new Nft(name, description, category, price, date, file);
+      listNfts.add(newNft);
+      var image_list = document.getElementById("image-list");
+       var el = document.createElement("p1");
+       el.className ="card";
+       el.id = "name";
+       el.style.backgroundImage = "url('"+file+"')";
+       el.innerHTML = name;
+       image_list.append(el);
+     }
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
      snackbar.labelText = error.message;
@@ -53,17 +62,14 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
      let nfts = listNfts.getNfts();
      console.log(nfts);
    }
-
-  
   
   }
 )
 
+
 const searchButton = new MDCRipple(document.getElementById('searchButton'));
  searchButton.listen('click', () => {
    let categorySelected = selectCategory2.value;
-  //hago un for que recorra la lista de nfts. Si la categoria es igual a categroySelected, 
-  //lo agrego con el codigo de mas abajo
   for(var i=0; i<listNfts.length; i++){
     if(listNfts[i].getCategory() == categorySelected){
       var image_list = document.getElementById("image-list");

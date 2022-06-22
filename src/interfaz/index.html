@@ -61,7 +61,7 @@
             </span>
             <span class="mdc-notched-outline__trailing"></span>
           </span>
-          <input type="text" class="mdc-text-field__input" aria-labelledby="name">
+          <input type="text" class="mdc-text-field__input" required>
         </label>
         
         <!--Description-->
@@ -147,11 +147,11 @@
         <span class="mdc-notched-outline">
           <span class="mdc-notched-outline__leading"></span>
           <span class="mdc-notched-outline__notch">
-            <span class="mdc-floating-label" id="my-label-id">Price</span>
+            <span class="mdc-floating-label" id="my-label-id" >Price</span>
           </span>
             <span class="mdc-notched-outline__trailing"></span>
           </span>
-          <input type="number" class="mdc-text-field__input" aria-labelledby="my-label-id">
+          <input type="number" class="mdc-text-field__input" min="0" step=".01" required>
        </label>
       </div>
 
@@ -165,7 +165,7 @@
             </span>
             <span class="mdc-notched-outline__trailing"></span>
           </span>
-          <input type="date" class="mdc-text-field__input" aria-labelledby="date">
+          <input type="date" class="mdc-text-field__input" aria-labelledby="date" required>
         </label>
       </div>
 
@@ -196,7 +196,7 @@
 <!--Pestaña EXPLORE-->
 
     <section class="content sample-content--hidden">
-
+      <section>
       <!--Categories-->
       <div>
         <div class="mdc-select mdc-select--outlined">
@@ -264,7 +264,7 @@
           <span class="mdc-button__label">Search</span>
         </button>
       </div>
-
+    </section>
       <!--
       <div class="mdc-tab-bar" role="tablist">
         <div class="mdc-tab-scroller">
@@ -331,11 +331,17 @@
         </div>
       </div>
     -->
+    <section>
+
+    </section>
       <section>
         <!--Image list-->
-        <ul class="mdc-image-list my-image-list" id= "image-list">
+        <div>
+          <ul class="mdc-image-list my-image-list" id= "image-list">
 
-        </ul>
+          </ul>
+        </div>
+      
   
       </section>
     </section>

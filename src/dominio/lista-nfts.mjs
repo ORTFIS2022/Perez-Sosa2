@@ -11,6 +11,7 @@ export default class ListNfts {
       } else {
         throw new Error(`Could not add, ${nft.name} already exists.`);
       }
+
     }
   
     getNfts() {

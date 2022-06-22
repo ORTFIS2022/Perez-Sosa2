@@ -40,6 +40,7 @@ body {
 
 .app-bar {
   position: absolute;
+  background-color: #026977;
 }
 
 .mdc-top-app-bar {
@@ -55,6 +56,7 @@ section {
   margin: 10rem auto;
   padding-bottom: 20rem;
   text-align: center;
+  align-items: normal;
 }
 
 .sample-content--hidden {
@@ -62,8 +64,7 @@ section {
 }
 
 .mdc-tab {
-    background-color: #f2f2f2;
-    /*#67daff*/
+    background-color: #9cf3ff;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -72,14 +73,16 @@ section {
 
 .mdc-text-field {
     margin: 1rem auto;
+  
 }
+
 
 .button {
   margin-top: 1rem;
 }
 
 .mdc-snackbar__actions .mdc-button__label {
-  color: #67daff;
+  color: #0095a8;
 }
 
 body{
@@ -97,7 +100,7 @@ background-color: #f2f2f2;
   width: 300px;
   padding: 16px;
   background-position:center;
-  background-size: 200px;
+  background-size: 200px 200px;
   background-repeat: no-repeat;
   background-color:rgb(225, 225, 225);
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

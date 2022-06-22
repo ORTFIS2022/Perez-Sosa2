@@ -1,4 +1,5 @@
 const Limit = 1;
+const ExpirationDate = new Date("June 23, 2022");
 
 export default class Nft {
     constructor(name, description, category, price, date, file){
@@ -6,10 +7,17 @@ export default class Nft {
         this.description = description;
         this.category = category;
         this.setPrice(price);
-        this.date = date;
+        this.setDate(date);
         this.file = file;
     }
 
+    setDate (date){
+        if(date > ExpirationDate){
+            this.date = date;
+        }else{
+            throw new Error(`Choose a valid date`);
+        }
+    }
     setPrice(price){
         if (price <= Limit){
             this.price = price;
@@ -18,7 +26,7 @@ export default class Nft {
         }
     }
 
-    getCategroy(){
+    getCategory(){
         return this.category;
     }
 }
