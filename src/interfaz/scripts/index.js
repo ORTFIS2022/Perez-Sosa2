@@ -28,6 +28,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
+//const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select2'));
 const textFieldPrice = new MDCTextField(document.getElementById('price'));
 const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
@@ -41,18 +42,19 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
    let description = textFieldDescription.value;
    let category = selectCategory.value;
    let price = textFieldPrice.value;
-   let date = textFieldDate.value;
+   let date = new Date(textFieldDate.value);
    let file = textFieldFile.value;
    try {
-     let newNft = new Nft(name, description, category, price, date, file);
-     listNfts.add(newNft);
 
-     var image_list = document.getElementById("image-list");
-      var el = document.createElement("p1");
-      el.className ="card";
-      el.innerText = name + " " + " | U$S " + price;
-      el.style.backgroundImage = "url('"+file+"')";
-      image_list.append(el);
+      let newNft = new Nft(name, description, category, price, date, file);
+      listNfts.add(newNft);
+      var image_list = document.getElementById("image-list");
+       var el = document.createElement("p1");
+       el.className ="card";
+       el.id = "name";
+       el.style.backgroundImage = "url('"+file+"')";
+       el.innerHTML = name + " | ETH: " + price;
+       image_list.append(el);
 
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
@@ -68,16 +70,15 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
   }
 )
 
- searchMusic.listen('click', () => {
+searchMusic.listen('click', () => {
   try{
-       //let categorySelected = selectCategory2.value;
        for(var i=0; i<listNfts.length; i++){
         if(listNfts[i].getCategory() == "Music"){
           var image_list = document.getElementById("image-list");
           var el = document.createElement("p1");
           el.className ="card";
-          el.innerText = i.getName() + " " + " | U$S " + i.getFile();
-          el.style.backgroundImage = "url('"+file+"')";
+          el.innerText = i.getName() + " " + " | U$S " + i.getPrice();
+          el.style.backgroundImage = "url('"+i.getFile()+"')";
           image_list.append(el);
           snackbar.labelText = error.message;
           snackbar.open();
@@ -93,3 +94,4 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
   
   }
 )
+
