@@ -39,7 +39,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    let description = textFieldDescription.value;
    let category = selectCategory.value;
    let price = textFieldPrice.value;
-   let date = textFieldDate.value;
+   let date = new Date(textFieldDate.value);
    let file = textFieldFile.value;
    try {
      
