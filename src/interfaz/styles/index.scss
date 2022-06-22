@@ -55,7 +55,7 @@ section {
 .content {
   margin: 10rem auto;
   padding-bottom: 20rem;
-  text-align: center;
+  text-align:center;
   align-items: normal;
 }
 
@@ -72,13 +72,18 @@ section {
 }
 
 .mdc-text-field {
-    margin: 1rem auto;
-  
+  width: 50%;
+  margin: 1rem auto;
+
+}
+
+.mdc-select{
+  width: 50%;
 }
 
 
 .button {
-  margin-top: 1rem;
+  margin-top: 1rem auto;
 }
 
 .mdc-snackbar__actions .mdc-button__label {
