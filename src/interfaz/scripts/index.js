@@ -7,7 +7,6 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListNfts from '../../dominio/lista-nfts.mjs';
 import Nft from '../../dominio/nft.mjs';
 
-
 const listNfts = new ListNfts();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
@@ -23,7 +22,6 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
     }
   });
 });
-
 
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
@@ -53,7 +51,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
        el.className ="card";
        el.id = "name";
        el.style.backgroundImage = "url('"+file+"')";
-       el.innerHTML = name + "\n ETH: " + price;
+       el.innerHTML = name + " | ETH: " + price;
        
        image_list.append(el);
    } catch (error) {
@@ -66,4 +64,5 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    }
   }
 )
+
 
