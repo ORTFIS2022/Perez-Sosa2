@@ -131,6 +131,38 @@ background-color: #f2f2f2;
   border: 10px solid white;
 }
 
+.mdc-card-2{
+  height: 296px;
+  width: 296px;
+  padding: 16px;
+  background-image: url("https://v2.cimg.co/news/59669/22919/screenshot-2021-09-06-at-16-07-20-101-bored-ape-yacht-club-ape-in-2021-sothebys.png");
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+}
+
+.mdc-card-3{
+  height: 296px;
+  width: 296px;
+  padding: 16px;
+  background-image: url("https://img.freepik.com/vector-gratis/impresionante-estilo-nft-ojo-vidrio-mono-aburrido_361671-269.jpg?w=2000");
+  background-position:center;
+  background-size: 250px 250px;
+  background-repeat: no-repeat;
+  background-position: 50% 75% ;
+  background-color: #d6f0f8;
+  box-shadow: 0px 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  border: 10px solid white;
+}
+
 .mdc-card__action-icons{
   text-align: center;
 }
