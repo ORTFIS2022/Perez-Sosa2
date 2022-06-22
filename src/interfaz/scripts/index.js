@@ -35,7 +35,7 @@ const textFieldFile = new MDCTextField(document.getElementById('file'));
 //const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select'));
 
 const addButton = new MDCRipple(document.getElementById('addButton'));
-const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
+//const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
 
  addButton.listen('click', () => {
    let name = textFieldName.value;
@@ -67,29 +67,3 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
   }
 )
 
-searchMusic.listen('click', () => {
-  try{
-       //let categorySelected = selectCategory2.value;
-       for(var i=0; i<listNfts.length; i++){
-        if(listNfts[i].getCategory() == "Music"){
-          var image_list = document.getElementById("image-list");
-          var el = document.createElement("p1");
-          el.className ="card";
-          el.innerText = i.getName() + " " + " | U$S " + i.getFile();
-          el.style.backgroundImage = "url('"+file+"')";
-          image_list.append(el);
-          snackbar.labelText = error.message;
-          snackbar.open();
-      }
-    }
-
-  }catch(error){
-    snackbar.labelText = error.message;
-    snackbar.open();
-
-  }
-
-  
-  }
-
-)
