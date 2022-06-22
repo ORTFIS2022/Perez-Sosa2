@@ -54,7 +54,6 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
        el.id = "name";
        el.style.backgroundImage = "url('"+file+"')";
        el.innerHTML = name + "\n ETH: " + price;
-       
        image_list.append(el);
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
