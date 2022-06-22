@@ -53,7 +53,7 @@ section {
 }
 
 .content {
-  margin: 10rem auto;
+  margin: 5rem auto;
   padding-bottom: 20rem;
   text-align:center;
   align-items: normal;
@@ -64,7 +64,7 @@ section {
 }
 
 .mdc-tab {
-    background-color: #9cf3ff;
+    background-color: #aeedf5;
 }
 
 .mdc-tab__content .mdc-tab__text-label {
@@ -119,7 +119,7 @@ background-color: #f2f2f2;
   height: 350px;
   width: 350px;
   padding: 16px;
-  background-image: url("https://media.americateve.com/p/67a28c1514b9a520e82c3fab6030a4eb/adjuntos/179/imagenes/008/234/0008234807/1200x1200/smart/bayc2jpg.jpg");
+  background-image: url("https://img.seadn.io/files/8a9de5c3e69c0bdf4dd183e0ea8a3581.png?auto=format&fit=max&w=640");
   background-position:center;
   background-size: 250px 250px;
   background-repeat: no-repeat;
@@ -131,11 +131,11 @@ background-color: #f2f2f2;
   border: 10px solid white;
 }
 
-.mdc-card-2{
+.mdc-card-prueba{
   height: 296px;
   width: 296px;
   padding: 16px;
-  background-image: url("https://v2.cimg.co/news/59669/22919/screenshot-2021-09-06-at-16-07-20-101-bored-ape-yacht-club-ape-in-2021-sothebys.png");
+  background-image: url("https://img.seadn.io/files/07e5cfcfeabc324b17b35a1a89f5d32a.png?auto=format&fit=max&w=640");
   background-position:center;
   background-size: 250px 250px;
   background-repeat: no-repeat;
@@ -145,13 +145,14 @@ background-color: #f2f2f2;
   transition: 0.3s;
   border-radius: 5px;
   border: 10px solid white;
+
 }
 
-.mdc-card-3{
+.mdc-card-prueba2{
   height: 296px;
   width: 296px;
   padding: 16px;
-  background-image: url("https://img.freepik.com/vector-gratis/impresionante-estilo-nft-ojo-vidrio-mono-aburrido_361671-269.jpg?w=2000");
+  background-image: url("https://img.seadn.io/files/746f0900f44e7011c968d47742218835.png?auto=format&fit=max&w=640");
   background-position:center;
   background-size: 250px 250px;
   background-repeat: no-repeat;
@@ -161,6 +162,7 @@ background-color: #f2f2f2;
   transition: 0.3s;
   border-radius: 5px;
   border: 10px solid white;
+
 }
 
 .mdc-card__action-icons{

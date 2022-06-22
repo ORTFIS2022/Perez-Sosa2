@@ -24,6 +24,7 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
+
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
@@ -31,8 +32,8 @@ const textFieldPrice = new MDCTextField(document.getElementById('price'));
 const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
 
+
 const addButton = new MDCRipple(document.getElementById('addButton'));
-const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
 
  addButton.listen('click', () => {
    let name = textFieldName.value;
@@ -42,7 +43,6 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
    let date = new Date(textFieldDate.value);
    let file = textFieldFile.value;
    try {
-
       let newNft = new Nft(name, description, category, price, date, file);
       listNfts.add(newNft);
       var image_list = document.getElementById("image-list");
@@ -50,7 +50,8 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
        el.className ="card";
        el.id = "name";
        el.style.backgroundImage = "url('"+file+"')";
-       el.innerHTML = name + "\n ETH: " + price;
+       el.innerHTML = name + " | ETH: " + price;
+       
        image_list.append(el);
    } catch (error) {
      const snackbar = new MDCSnackbar(document.querySelector('.mdc-snackbar'));
@@ -62,3 +63,4 @@ const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
    }
   }
 )
+

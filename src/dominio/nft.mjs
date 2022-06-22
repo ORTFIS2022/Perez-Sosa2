@@ -1,4 +1,4 @@
-const Limit = 1;
+const Limit = 100;
 const Today = new Date("2022-06-23");
 
 export default class Nft {
