@@ -5,7 +5,13 @@ Fecha de entrega: 29-nov-2021
 
 Implementación de funciones principales (sin la necesidad de persistencia de datos)
 
+Se implementaron las funciones de crear nft y explorar. Primero la pestaña crear, la cual se pide el ingreso del nombre, una descripcion, una categoria, precio, fecha de expedición y la imagen del mismo.
+Luego la pestaña explorar, en la cual se pueden ver los nft agregados tanto reciente como anteriormente.
+En los mismos se puede apreciar la imagen, su nombre y su precio. 
+
 Configuración de plataforma tecnológica para desarrollo y producción
+
+La base de nuestro proyecto fue la implementacion de componentes de Matirial Design sobre una base de codigo html para darle estructura y Java Scripts para regularizar los componendtes de diseño.
 
 Documentación del uso de librerías externas (package.json)
 
@@ -13,9 +19,18 @@ Documentación del uso de librerías externas (package.json)
 
 Interfaz de usuario web / mobile (responsive)
 
-Página única con navegación entre secciones
+Con respecto a la interfaz de usuario, intentamos que fuera lo mas intuitiva y agradable a la viasta posible, con colores básicos, nombres nemotécnicos, sin tener que invadir al usuario con aspectos complicados de ejecutar. 
+Gracias a los componentes de Matirial Design se hace bastante facil ya sea agregar un nuevo nft, como realizar una exploración dentro de la página y entre secciones.
 
-Implementación: Material Design Web Components
+## Implementación: Material Design Web Components
+
+Snackbar: Utilizados para los mensajes emergentes ya sean de validación o un error que el usuario haya cometido.
+MCD-Top App Bar: Utilizado para crear la barra superior donde se situan las pestañas "crear" y "explorar".
+MCD-Card: Utilizado para crear los nft.
+MCD-Image List: Utilizado para ubicar las card de los nft en la interfaz.  
+MDC-Texfield: Utilizados para darle lugar a los nombres y descripcion de los nft.  
+MDC-Select: Utilizado para poder seleccionar y asignar las categorias correspondientes previamente cargadas.   
+MCD-Button: Utilizados para poder agregar los nft a la lista y poder visualizarlos dentro de las cards.
 
 Aplicar un sistema de diseño y principios de usabilidad
 
@@ -25,7 +40,7 @@ Seguir especificación de estilo
 
 ## Codificación
 
-IDE Visual Studio Code: configuración común del equipo
+La implementación y codificacioón utilizada por cada integrante se realizo en Visual Studio Code, acompañado por los estándares de codificación de google. 
 
 Estándares de codificación Google (HTML, CSS, JavaScript)
 
