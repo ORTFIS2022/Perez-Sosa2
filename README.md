@@ -1,11 +1,12 @@
 # Repositorio plantilla para proyectos FIS
 
-| Identificación del proyecto
-|-----------
-| Fundamentos de Ingeniería de Software
-ID M4A - Docente:_____
-Estudiantes: ____
-
+| Identificación |
+| -------- | 
+| Fundamentos de Ingeniería de Software | 
+|M3B - Docente Alejando Adorjan|
+|27/06/2022|
+|Santiago Perez y Chiara Sosa|
+|https://github.com/ORTFIS2022/Perez-Sosa2|
 
 
 
