@@ -7,7 +7,6 @@ import {MDCSnackbar} from '@material/snackbar';
 import ListNfts from '../../dominio/lista-nfts.mjs';
 import Nft from '../../dominio/nft.mjs';
 
-
 const listNfts = new ListNfts();
 
 const topAppBarElement = document.querySelector('.mdc-top-app-bar');
@@ -24,16 +23,17 @@ tabBar.listen("MDCTabBar:activated", (activatedEvent) => {
   });
 });
 
-
 const textFieldName = new MDCTextField(document.getElementById('name'));
 const textFieldDescription = new MDCTextField(document.getElementById('description'));
 const selectCategory = new MDCSelect(document.querySelector('.mdc-select'));
+//const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select2'));
 const textFieldPrice = new MDCTextField(document.getElementById('price'));
 const textFieldDate = new MDCTextField(document.getElementById('date'));
 const textFieldFile = new MDCTextField(document.getElementById('file'));
-
+//const selectCategory2 = new MDCSelect(document.querySelector('.mdc-select'));
 
 const addButton = new MDCRipple(document.getElementById('addButton'));
+//const searchMusic = new MDCRipple(document.getElementById('searchMusic'));
 
  addButton.listen('click', () => {
    let name = textFieldName.value;
@@ -43,6 +43,7 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    let date = new Date(textFieldDate.value);
    let file = textFieldFile.value;
    try {
+
       let newNft = new Nft(name, description, category, price, date, file);
       listNfts.add(newNft);
       var image_list = document.getElementById("image-list");
@@ -63,4 +64,5 @@ const addButton = new MDCRipple(document.getElementById('addButton'));
    }
   }
 )
+
 
